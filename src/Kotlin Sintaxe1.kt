@@ -60,5 +60,17 @@ fun main() {
     val empty = ""
     println(blank.isBlank())
     println(empty.isEmpty())
-    
+    println(retornaFrase(var_ola, var_mundo))
+
+    val z:Int
+    z = calculate(10,10) {a,b -> a*b} //eu basicamente defino o que eu quero fazer, quando chamo
+    println(z)                               // a função (por isso ordem superior)
 }
+
+    private fun retornaFrase(palavra1:String, palavra2:String):String{ //função que retorna String
+         return "$palavra1 ${palavra2.capitalize()}!"
+    }
+    fun calculate(n1:Int, n2:Int, operation:(Int,Int)->Int):Int{ //função de ordem superior
+        val result = operation(n1,n2)
+        return result
+    }
