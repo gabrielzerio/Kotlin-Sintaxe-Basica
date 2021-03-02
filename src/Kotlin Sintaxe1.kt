@@ -63,7 +63,7 @@ fun main() {
     println(retornaFrase(var_ola, var_mundo))
 
     val z:Int
-    z = calculate(10,10) {a,b -> a*b} //eu basicamente defino o que eu quero fazer, quando chamo
+    z = calculate(10,10) {aa,bb -> aa*bb} //eu basicamente defino o que eu quero fazer, quando chamo
     println(z)                               // a função (por isso ordem superior)
 }
 
